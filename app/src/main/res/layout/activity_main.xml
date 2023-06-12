@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toi"
+        android:fontFamily="cursive"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        android:text="these are the friends who are signed in shadow_chat">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_below="@id/toi"
+        tools:listitem="@layout/friends"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
